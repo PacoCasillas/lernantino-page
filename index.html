@@ -5,34 +5,27 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./assets/style.css" />
-    <title>Lermamtino - About me</title>
+    <title>About me</title>
   </head>
 
   <body>
     <header>
-      <p></p>
-      <h1 class="text-box">Lernantino</h1>
+      <h1 class="main-header">Francisco Casillas</h1>
       <section class="topnav">
-        <a href="#">About Me</a>
-        <a href="#">Work</a>
-        <a href="#">Contact Me</a>
-        <a href="#">Resume</a>
+        <a href="#about-me">About Me</a>
+        <a href="#work-header">Work</a>
+        <a href="#contact-me">Contact Me</a>
       </section>
     </header>
 
-    <main>
-      <div>
-        <img
-          id="header-picture"
-          src="assets/images/Header-background.jpg"
-          alt="gradient blue wood background"
-        />
+    <div class="hero-image">
+      <div class="hero-text">
+        <p>Cool subtitle here!</p>
       </div>
-      <div class="text-box">Cool subtitle here!</div>
-    </main>
+    </div>
 
-    <div class="container">
-      <h2>About Me</h2>
+    <div class="container-aboutme">
+      <h2 id="about-me">About Me</h2>
       <p>
         Lorem ipsum, dolor sit amet consectetur adipisicing elit. In
         praesentium, facere dolores similique minima enim, ipsa est mollitia
@@ -41,74 +34,73 @@
       </p>
     </div>
 
-    <div class="container">
-      <h2>Work</h2>
+    <main class="grid-container">
+      <h2 id="work-header">Work</h2>
 
-      <p id="grid-container"></p>
-
-      <div class="container-box">
+      <div class="grid-item">
         <img
-          src="assets/images/surf.jpg"
+          src="assets/pictures/surf.jpg"
           alt="rocky coast beach with a woman staring out"
           width="1000px"
           height="330px"
+          style="width: 100%"
         />
         <h3 class="text-on-picture">Surf Report</h3>
       </div>
 
-      <div class="container-box">
+      <div class="grid-item">
         <img
-          src="assets/images/LED-wall.avif"
+          src="assets/pictures/LED-wall.avif"
           alt="a wall of LED dots"
           width="450px"
           height="330px"
+          style="width: 100%"
         />
         <h3 class="text-on-picture">LED Wall</h3>
       </div>
 
-      <div class="container-box">
+      <div class="grid-item">
         <img
-          src="assets/images/desktop.webp"
+          src="assets/pictures/desktop.webp"
           alt="desk with a plant and computer on it"
           width="450px"
           height="330px"
+          style="width: 100%"
         />
         <h3 class="text-on-picture">Calculator</h3>
       </div>
 
-      <div class="container-box">
+      <div class="grid-item">
         <img
-          src="assets/images/puzzle.png"
+          src="assets/pictures/puzzle.png"
           alt="pastel colored puzzle pieces put together"
           width="450px"
           height="330px"
+          style="width: 100%"
         />
         <h3 class="text-on-picture">Pastel Puzzels</h3>
       </div>
 
-      <div class="container-box">
+      <div class="grid-item">
         <img
-          src="assets/images/run-buddy.jpg"
+          src="assets/pictures/run-buddy.jpg"
           alt="woman and man jogging"
           width="450px"
           height="330px"
+          style="width: 100%"
         />
         <h3 class="text-on-picture">Run Buddy</h3>
       </div>
-    </div>
-    <div class="container">
-      <h2>Contact Me</h2>
+    </main>
+
+    <div class="contact-container">
+      <h2 id="contact-me">Contact Me</h2>
 
       <p>
-        <a href="#">555.555.5555</a>
+        <a href="https://github.com/PacoCasillas?tab=projects">GitHub</a>
 
-        <a href="#">learnantino@website.com</a>
-
-        <a href="#">GitHub</a>
-
-        <a href="#">Twitter</a>
-
-        <a href="#">Spotify</a>
+        <a href="https://open.spotify.com/">Spotify</a>
+        <!--I know its not my actual spotify I just wanted to make a working link-->
       </p>
     </div>
   </body>

@@ -1,88 +1,106 @@
-
 * {
     font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+main {
+  display: flex;
 }
 
 header {
-    background-color:rgb(59, 59, 59);
-}
-
-.container {
-  margin-left: 150px;
+  background-color: hsl(0,0%,37%);
+  color: wheat;
   display: flex;
   align-items: center;
+  justify-content: space-between;
 }
 
-.container-box {
-    border-style: solid;
-    border-width: 20px;
-    margin-left: 600px;
-    display: flex;
-    align-items: center;
-    margin: 20px;
-    position: relative;
-    text-align: left;
-    color: aqua;
+.main-header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  background-color: green;
+  padding: 10px 10px 10px 50px;
 }
 
 .topnav {
-  height: 100%;
-  width: 160px;
-  position: static;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  overflow-x: hidden;
-  padding-top: 20px;
+  display: flex;
+  flex-direction: row;
+  margin-right: 50px;
 }
 
 .topnav a {
   padding: 6px 8px 6px 16px;
   text-decoration: underline;
   font-size: 25px;
-  color: rgb(105, 199, 202);
-  display: block;
+  color: wheat;
+  display: flex;
+  flex-direction: column-reverse;
+  }
+  
+.hero-image {
+    background-image: url("pictures/greenwood.jpg");
+    height: 10em;
+    display: flex;
+  }
+
+.hero-text {
+    padding: 10px;
+    background-color: wheat;
+    display: inline-flex;
+    align-self: flex-end;
+    margin: 0 0 20px 65rem;
+  }
+
+p {
+    margin: 0;
+    align-self: center;
+  }
+
+.container-aboutme {
+  display: flex;
+  flex-direction: row;
 }
 
 h2 {
   margin-right: 2rem;
   font-size: xx-large;
+  display: flex;
+  text-align: right;
 }
 
-p {
-  border-left:  5px solid black;
-  padding-left: 2rem;
+.grid-container {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 10px;
 }
 
-h3 {
-    flex-direction: row;
-    justify-content: flex-start;
-    color: black;
+.grid-item {
+  display: grid;
+  background-color: green;
+  padding: 20px;
+  color:wheat;
+  text-align: center;
+  margin: 10px;
+  filter: brightness(50%);
 }
 
-
-@media screen and (max-height: 450px) {
-    .sidenav {padding-top: 15px;}
-    .sidenav a {font-size: 18px;}
-  }
-
-.text-box {
-    padding: 100px;
-    background-color: aqua;
+.grid-item:nth-of-type(1) {
+  grid-column: 1 / span 2;
 }
 
 .text-on-picture {
   position: absolute;
-  bottom: 8px;
-  background-color: aqua;
-  padding: 40px;
-  margin: -1px;
+  background-color: green;
+  padding: 30px;
+  display: flex;
+  margin-top: 250px;
 }
 
-#grid-container {
-  display: grid;
-  height: 1000px;
-  width: 1000px;
-  gap: 10px;
-  padding: 10px;
+.grid-item:hover {
+  filter: brightness(100%);
 }
+
+
+
